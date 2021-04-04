@@ -7,7 +7,7 @@ driver = webdriver.Chrome(executable_path='/Users/annakarelina/Desktop/Automatio
 driver.maximize_window()
 
 # open the url
-driver.get('https://www.google.com/')
+driver.get('https:/google.com')
 
 search = driver.find_element(By.NAME, 'q')
 search.clear()
