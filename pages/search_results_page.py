@@ -10,7 +10,7 @@ class SearchResultsPage(Page):
 
 
     def verify_search_in_url(self,search_word):
-        self.verify_text_url(search_word)
+        self.verify_url_contains_text(search_word)
 
 # @then ('Verify {search_result} in URL')
 # def verify_url(context, search_result):

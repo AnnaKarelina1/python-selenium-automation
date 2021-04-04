@@ -18,5 +18,5 @@ class Page:
         actual_text=self.driver.find_element(*locator).text
         assert actual_text==expected_text, f'Expected result {expected_text},but got {actual_text}'
 
-    def verify_text_url(self,text):
-        assert f'{text}' in self.driver.current_url
+    def verify_url_contains_text(self,text):
+        assert f'{text}' in self.driver.current_url, f'{text}is not in {self.driver.current_url}'
